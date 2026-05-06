@@ -16,7 +16,6 @@ answers = [
 
 @bot.message_handler(func=lambda message: True)
 def reply(message):
-    if random.randint(1, 4) == 1:
-        bot.reply_to(message, random.choice(answers))
+    bot.reply_to(message, random.choice(answers))
 
 bot.infinity_polling()
