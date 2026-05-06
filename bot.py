@@ -1,7 +1,8 @@
 import telebot
 import random
+import os
 
-TOKEN = "ТВОЙ_ТОКЕН_БОТА"
+TOKEN = os.getenv("TOKEN")
 
 bot = telebot.TeleBot(TOKEN)
 
